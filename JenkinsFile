@@ -5,12 +5,12 @@ pipeline{
                 steps{
                     checkout([$class:'GitSCM',
                     branches:[[name:'*/main']],
-                    userRemoteConfigs: [[url:'https://github.com/Shrey-sa/PES2UG21CS500_SHREY.git']]])
+                    userRemoteConfigs: [[url:'https://github.com/onlyabhishek/PES2UG21SC542_Jenkins.git']]])
                 }
               }
               stage('Build'){
                 steps{
-                    build 'PES2UG21CS500-1'
+                    build 'PES2UG21CS542-1'
                     sh 'g++ Jenkins.cpp -o output'
                     echo 'Build Stage Successful'
                 }
