@@ -10,7 +10,7 @@ pipeline{
               }
               stage('Build'){
                 steps{
-                    build 'PES2UG21CS542-1'
+                    build 'PES2UG21CS542'
                     sh 'g++ Jenkins.cpp -o output'
                     echo 'Build Stage Successful'
                 }
